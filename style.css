@@ -61,8 +61,69 @@ button:hover {
 .card {
   border: 3px solid #4f7d5d;
   padding: 25px;
+  box-sizing: content-box;
 }
 
 .hidden {
   display: none;
+}
+
+#difficulty {
+  border: 2px solid;
+  width: 150.22px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  line-height: 25px;
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+#difficulty.active {
+  display: block;
+  max-height: 200px;
+}
+
+.diff {
+  /* border: 2px solid; */
+  text-indent: 5%;
+  cursor: pointer;
+  padding: 5px 0;
+  border-bottom: 1px solid;
+}
+
+
+
+.easy:hover {
+  color: rgb(92, 255, 47);
+  border: none;
+  text-shadow: 1px 1px 1px black;
+  background-color: rgba(92, 255, 47, 0.283);
+}
+
+.medium:hover {
+  color: rgb(255, 255, 0);
+  border: none;
+  text-shadow: 1px 1px 1px black;
+  background-color: rgba(255, 255, 0, 0.383);
+}
+
+.hard:hover {
+  color: rgb(255, 0, 0);
+  border: none;
+  text-shadow: 1px 1px 1px black;
+  background-color: rgba(255, 0, 0, 0.329);
+}
+
+.reset {
+  margin-left: 20px;
+}
+
+.bottom-section {
+  display: flex;
+  line-height: 20px;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
 }
